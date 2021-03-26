@@ -88,8 +88,8 @@ function renderTable() {
     newRow.insertCell(1).innerText = cloudLibData[index].author;
     newRow.insertCell(2).innerText = cloudLibData[index].pages;
     newRow.insertCell(3).innerHTML = `<span id='read${index}'>${cloudLibData[index].read}</span>`;
-    newRow.insertCell(4).innerHTML = `<button onclick='markRead(${index})'>Check</button>`;
-    newRow.insertCell(5).innerHTML = `<button onclick='deleteRow(${index})'>Delete</button>`
+    newRow.insertCell(4).innerHTML = `<button onclick='markRead(${index})' class='tableButtons' >Check</button>`;
+    newRow.insertCell(5).innerHTML = `<button onclick='deleteRow(${index})' class='tableButtons' >Delete</button>`
   }
   
 }

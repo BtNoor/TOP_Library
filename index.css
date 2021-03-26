@@ -1,22 +1,55 @@
 body, button {
     font-family: 'Bebas Neue', cursive;
+    
 }
+
+body {
+    background: url('/images/library.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 
 #mainContainer {
     text-align: center;
 }
 
+h1 {
+    font-size: 7vh;
+    color: white;
+}
+
+p {
+    font-size: 3vh;
+    color: white;
+}
+
+a {
+    color:white;
+}
+
+
 .tables {
     background-color: #b7bfff;
     width: auto;
-    border: 5px white solid;
     margin: auto;
+    font-size: 3vh;
+    border-radius: 3vh;
+    text-align: center;
+    box-shadow: black 2px 2px 10px;
     
 }
 
+#libraryTable {
+    margin-top: 2vh;
+}
+
 th, td{
-    width: 15vh;
-    border: 1px white solid;
+    width: 25vh;
+    height: 7vh;
     margin: auto;
     padding-left: 2vh;
 }
@@ -96,5 +129,20 @@ th, td{
     height: 5vh;
     font-size: 3vh;
     border-radius: 1vh;
-    background-color: #b7bfff;
+    background-color: white;
+}
+
+.tableButtons {
+    width:10vh;
+    height: 5vh;
+    font-size: 3vh;
+    background-color: white;
+    border-radius: 1.5vh;
+    box-shadow: black 1px 1px 5px;
+}
+
+@media (max-width:900px) {
+    td, th, input, #addbutton, .tableButtons, .input {
+        font-size: 2.5vh;
+    }
 }
