@@ -5,7 +5,7 @@ let cloudLib = {};
 let cloudLibData = []
 
 dbRefObject.on('value', snap => {
-  console.log(snap.val())
+  //console.log(snap.val())
   cloudLib = snap.val();
   cloudLibData = cloudLib["myLibrary"];
   let myLibrary = cloudLibData;
