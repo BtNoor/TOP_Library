@@ -64,6 +64,7 @@ function markRead(index) {
     myLibrary[index].read = 'No'
     document.getElementById(`read${index}`).innerHTML = `<span id='read${index}'>${myLibrary[index].read}</span>`
   }
+  writeUserData()
 }
 
 //deletes a single array object
